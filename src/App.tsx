@@ -13,7 +13,6 @@ import { getAuth, onAuthStateChanged } from "firebase/auth";
 /* eslint-enable */
 import { setCurrentUser } from "./store/store";
 import { useDispatch } from "react-redux";
-import { UserData } from "./utils/firebase.utils";
 const router = createBrowserRouter([
   {
     path: "/",
@@ -45,7 +44,7 @@ function App() {
   const auth = getAuth();
   // const navigate = useNavigate();
   useEffect(() => {
-    onAuthStateChanged(auth, (user: UserData) => {
+    onAuthStateChanged(auth, (user) => {
       if (user) {
         // User is signed in, see docs for a list of available properties
         // https://firebase.google.com/docs/reference/js/auth.user

@@ -1,7 +1,5 @@
 // Import the functions you need from the SDKs you need
-/* eslint-disable */
 
-//@ts-ignore
 import {
   GoogleAuthProvider,
   signInWithPopup,
@@ -10,11 +8,8 @@ import {
   createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
 } from "firebase/auth";
-//@ts-ignore
 import { initializeApp } from "firebase/app";
-//@ts-ignore
 import { doc, setDoc, getFirestore } from "firebase/firestore";
-/* eslint-enable */
 // Your web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyBwfArZiZnCgVMyer0l2ZYTJweB50ImRKY",
@@ -103,7 +98,11 @@ export const createWithEmailAndPassword = async (
 
 export const signInWithPassword = async (email: string, password: string) => {
   try {
-    const userCredential = signInWithEmailAndPassword(auth, email, password);
+    const userCredential = await signInWithEmailAndPassword(
+      auth,
+      email,
+      password
+    );
     const user = userCredential.user;
     console.log(user);
   } catch (error) {
