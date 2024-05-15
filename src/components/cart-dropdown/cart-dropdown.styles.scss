@@ -1,0 +1,29 @@
+.cart-dropdown {
+  position: absolute;
+  top: 50px;
+  left: -100px;
+  border: 1px solid black;
+  background-color: #fff;
+
+  .cart-scroll {
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    margin-bottom: 4rem;
+  }
+  .chekout-link {
+    position: relative;
+    bottom: 30px;
+    background-color: black;
+    color: #fff;
+    padding: 1rem;
+    border: 1px solid black;
+    &:hover {
+      background-color: #fff;
+      color: black;
+    }
+  }
+}

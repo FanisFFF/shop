@@ -1,0 +1,11 @@
+.directory {
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
+  margin: 0 auto;
+  justify-content: center;
+  margin-top: 4rem;
+  row-gap: 3rem;
+  max-width: 1000px;
+  column-gap: 1rem;
+  align-items: center;
+}

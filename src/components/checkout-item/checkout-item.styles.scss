@@ -1,0 +1,15 @@
+.checkout-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  align-items: center;
+  margin-bottom: 1rem;
+  button {
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+  .quantity-container {
+    display: flex;
+    justify-content: space-between;
+  }
+}

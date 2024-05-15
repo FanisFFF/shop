@@ -1,0 +1,28 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px hsl(223, 64%, 98%) solid;
+  padding: 1rem;
+  .links {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    gap: 2rem;
+    .links__link {
+      text-decoration: none;
+      color: black;
+      cursor: pointer;
+      border: none;
+      background-color: white;
+    }
+  }
+  .logo {
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+  .cart-icon {
+    cursor: pointer;
+  }
+}
