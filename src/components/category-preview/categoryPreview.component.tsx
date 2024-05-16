@@ -10,7 +10,6 @@ type CategoryPreviewProps = {
 };
 
 const CategoryPreview: FC<CategoryPreviewProps> = ({ title, items }) => {
-  // const categoryData = props.element;
   return (
     <div className="category-preview">
       <Link className="category-name" to={`${title.toLowerCase()}`}>

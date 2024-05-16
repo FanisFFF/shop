@@ -8,7 +8,6 @@ type CategoryItemProps = {
 };
 
 const Button: FC<CategoryItemProps> = ({ product }) => {
-  // function Button({ product }): FC<CategoryItemProps> {
   const dispatch = useDispatch();
   return (
     <>
